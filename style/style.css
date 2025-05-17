@@ -1,0 +1,583 @@
+/* 
+* Pro Plumbing - Dark Theme Stylesheet (Fixed Navbar)
+* This file contains custom styles with fixed navbar contrast
+*/
+
+:root {
+    --primary: #ffd700;          /* Golden yellow as new primary */
+    --primary-dark: #d4b400;     /* Darker yellow for hover states */
+    --secondary: #191e29;        /* Keeping your dark blue-gray */
+    --accent: #ff9500;           /* Adjusted orange accent to complement yellow */
+    --text-light: #ffffff;       /* Keeping white text */
+    --text-body: #e0e0e0;        /* Keeping bright body text */
+    --text-muted: #b0b8c1;       /* Keeping muted text */
+    --dark: #121721;             /* Keeping dark background */
+    --darker: #0b0e13;           /* Keeping darker background */
+    --card-bg: #1a1f2c;          /* Keeping card background */
+    --border-color: #2a2f3a;     /* Keeping border color */
+    --success: #4caf50;          /* Keeping success color */
+    --nav-link: #ffffff;         /* Keeping white nav links */
+    --heading-color: #ffffff;    /* Keeping white headings */
+    --navbar-bg: #121721;        /* Keeping dark navbar */
+}
+
+/* NAVBAR COLOR FIX */
+.navbar {
+    background-color: #0b0e13 !important; /* Dark background */
+}
+
+.navbar-scrolled {
+    background-color: rgba(11, 14, 19, 0.95) !important; /* Still dark when scrolled */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Force white text colors */
+.navbar .nav-link, 
+.navbar .navbar-brand,
+.navbar .navbar-toggler {
+    color: #ffffff !important;
+}
+
+/* Primary blue on hover */
+.navbar .nav-link:hover, 
+.navbar .nav-link:focus {
+    color: #00c6ff !important;
+}
+
+/* Base Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-body);
+    background-color: var(--dark);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--heading-color);
+    font-weight: 600;
+}
+
+p {
+    color: var(--text-body);
+    margin-bottom: 1rem;
+}
+
+/* Preloader */
+#preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background: var(--darker);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading-text {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-light);
+}
+
+.loading-text span {
+    color: var(--primary);
+}
+
+/* Header & Navigation */
+.top-bar {
+    background-color: var(--secondary);
+    color: var(--text-light);
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.navbar {
+    background-color: var(--navbar-bg);  /* Fixed: Using explicit navbar background */
+    padding: 15px 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 28px;
+    color: var(--text-light);
+}
+
+.navbar-brand span {
+    color: var(--primary);
+}
+
+.navbar-toggler {
+    border: none;
+    color: var(--text-light);
+    font-size: 20px;
+    background-color: transparent;  /* Ensuring transparent background */
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.nav-link {
+    font-weight: 500;
+    margin: 0 10px;
+    color: var(--nav-link);
+    transition: all 0.3s;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: var(--primary);
+}
+
+/* Navbar Scrolled State */
+.navbar-scrolled {
+    background-color: var(--darker);  /* Darker when scrolled */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: #000;                   /* Black text on primary buttons */
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+    color: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 198, 255, 0.3);
+}
+
+.btn-outline-primary {
+    color: var(--primary);
+    border-color: var(--primary);
+    transition: all 0.3s;
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:focus {
+    color: #000;
+    background-color: var(--primary);
+    border-color: var(--primary);
+    transform: translateY(-2px);
+}
+
+.hero {
+    background: linear-gradient(rgba(11, 14, 19, 0.7), rgba(11, 14, 19, 0.7)), url('../images/home1.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: var(--text-light);
+    padding: 120px 0;
+    margin-bottom: 60px;
+    position: relative; /* Ensure position context for children */
+}
+
+/* Mobile devices */
+@media (max-width: 767px) {
+    .hero {
+        background: linear-gradient(rgba(11, 14, 19, 0.7), rgba(11, 14, 19, 0.7)), url('../images/home1_mobile.png');
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll; /* Changed from fixed to scroll for mobile */
+        padding: 80px 0;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 575px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--text-light);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: var(--text-body);
+}
+
+/* Ensure content is above the background */
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Services Section */
+.services {
+    background-color: var(--dark);
+}
+
+.services h2, .why-us h2, .testimonials h2, .faq-section h2, .contact-section h2 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    color: var(--text-light);
+}
+
+.services h2:after, .why-us h2:after, .testimonials h2:after, .faq-section h2:after, .contact-section h2:after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    background-color: var(--primary);
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card h3, .card h4, .card h5 {
+    color: var(--text-light);
+}
+
+.card p {
+    color: var(--text-body);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    border-color: var(--primary);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    color: var(--primary);
+    background: linear-gradient(45deg, rgba(0, 198, 255, 0.1), rgba(0, 198, 255, 0.05));
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Why Choose Us */
+.why-us {
+    background-color: var(--secondary);
+    padding: 80px 0;
+}
+
+.why-us .lead, .services .lead, .testimonials .lead, .faq-section .lead, .contact-section .lead {
+    color: var(--text-body);
+}
+
+/* Emergency Call Section */
+.emergency-call {
+    background: linear-gradient(rgba(11, 14, 19, 0.8), rgba(11, 14, 19, 0.8)), url('https://source.unsplash.com/1600x900/?emergency');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: var(--text-light);
+    padding: 80px 0;
+}
+
+.emergency-call h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--text-light);
+}
+
+.emergency-call p {
+    color: var(--text-body);
+}
+
+/* Testimonials */
+.testimonials {
+    background-color: var(--dark);
+}
+
+.quote-icon {
+    font-size: 2rem;
+    color: var(--primary);
+    opacity: 0.5;
+}
+
+.client-location {
+    color: var(--text-muted);
+}
+
+/* FAQ Section */
+.faq-section {
+    background-color: var(--secondary);
+}
+
+.accordion {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+}
+
+.accordion-item {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+}
+
+.accordion-button {
+    background-color: var(--card-bg);
+    color: var(--text-light);
+    box-shadow: none;
+    border-radius: 0;
+    font-weight: 500;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--text-light);
+    background-color: var(--secondary);
+    box-shadow: none;
+}
+
+.accordion-button::after {
+    filter: invert(1);
+}
+
+.accordion-body {
+    background-color: var(--card-bg);
+    color: var(--text-body);
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: var(--dark);
+}
+
+.contact-section h5 {
+    color: var(--text-light);
+}
+
+.contact-icon {
+    font-size: 1.5rem;
+    color: var(--primary);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(45deg, rgba(0, 198, 255, 0.1), rgba(0, 198, 255, 0.05));
+}
+
+.form-control, .form-select {
+    background-color: var(--secondary);
+    border: 1px solid var(--border-color);
+    color: var(--text-light);
+    padding: 12px 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.form-control:focus, .form-select:focus {
+    box-shadow: none;
+    border-color: var(--primary);
+    background-color: var(--secondary);
+    color: var(--text-light);
+}
+
+.form-control::placeholder {
+    color: var(--text-muted);
+}
+
+/* Footer */
+footer {
+    background-color: var(--darker);
+    border-top: 1px solid var(--border-color);
+}
+
+.footer-brand {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text-light);
+}
+
+.footer-brand span {
+    color: var(--primary);
+}
+
+.footer-heading {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 25px;
+    color: var(--text-light);
+    font-weight: 600;
+}
+
+.footer-heading:after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: var(--primary);
+    bottom: -10px;
+    left: 0;
+}
+
+.footer-links li {
+    margin-bottom: 15px;
+}
+
+.footer-links a, .footer-contact li {
+    color: var(--text-body);
+    text-decoration: none;
+    transition: all 0.3s;
+    display: block;
+}
+
+.footer-links a:hover {
+    color: var(--primary);
+    transform: translateX(5px);
+}
+
+.footer-contact li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.footer-contact i {
+    color: var(--primary);
+    margin-top: 5px;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--secondary);
+    color: var(--text-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    transition: all 0.3s;
+}
+
+.social-icon:hover {
+    background-color: var(--primary);
+    color: #000;
+    transform: translateY(-5px);
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    background-color: var(--primary);
+    color: #000;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    display: none;
+    transition: all 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: var(--primary-dark);
+    color: #000;
+    transform: translateY(-5px);
+}
+
+/* Animation */
+.fade-in-element {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-element.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .navbar-collapse {
+        background-color: var(--darker);
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        margin-top: 15px;
+    }
+    
+    .nav-link {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    section {
+        padding: 60px 0;
+    }
+    
+    .hero {
+        padding: 80px 0;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .emergency-call h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .card {
+        padding: 20px;
+    }
+    
+    .footer-heading {
+        font-size: 18px;
+    }
+}

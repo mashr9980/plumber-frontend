@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Plumbing Services | Your Trusted Local Plumber</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/app.js"></script>
+</head>
+<body class="dark-theme">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#00c6ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <div class="loading-text">The<span>Plumberlah</span></div>
+        </div>
+    </div>
+
+    <!-- Top Bar -->
+    <div class="top-bar d-none d-md-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <i class="fas fa-clock me-2"></i> Available 24/7 for Emergency Services
+                </div>
+                <div class="col-md-6 text-end">
+                    <i class="fas fa-phone-alt me-2"></i> Call Now: (123) 456-7890
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Fixed Navbar with Proper Contrast -->
+<nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">The<span>Plumberlah</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#why-us">Why Choose Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#testimonials">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#faq">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-primary rounded-pill px-4" href="tel:1234567890">
+                        <i class="fas fa-phone-alt me-2"></i> Call Now
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container py-5">
+            <div class="row py-5">
+                <div class="col-lg-8 col-md-10">
+                    <h1 class="display-4 fw-bold mb-4">Fast & Reliable Plumbing Services You Can Trust</h1>
+                    <p class="lead mb-4">Professional plumbing services for residential and commercial properties. Available 24/7 for emergencies.</p>
+                    <a href="tel:1234567890" class="btn btn-primary btn-lg rounded-pill px-4 py-3">
+                        <i class="fas fa-phone-alt me-2"></i> Call For Service Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="services py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-6 mx-auto">
+                    <h2 class="h1 fw-bold mb-4">Our Plumbing Services</h2>
+                    <p class="lead">We offer a comprehensive range of plumbing services to meet all your needs.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 rounded-3 p-4 fade-in-element">
+                        <div class="card-icon mb-3">
+                            <i class="fas fa-wrench"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Emergency Repairs</h3>
+                        <p class="mb-4">24/7 emergency plumbing repairs for burst pipes, water leaks, and other urgent issues that require immediate attention.</p>
+                        <a href="#contact" class="btn btn-outline-primary mt-auto">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 rounded-3 p-4 fade-in-element">
+                        <div class="card-icon mb-3">
+                            <i class="fas fa-shower"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Bathroom Plumbing</h3>
+                        <p class="mb-4">Toilet repair and installation, shower and bathtub plumbing, faucet repairs, and other bathroom plumbing services.</p>
+                        <a href="#contact" class="btn btn-outline-primary mt-auto">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 rounded-3 p-4 fade-in-element">
+                        <div class="card-icon mb-3">
+                            <i class="fas fa-sink"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Kitchen Plumbing</h3>
+                        <p class="mb-4">Sink and faucet repair, garbage disposal services, dishwasher installation, and other kitchen plumbing needs.</p>
+                        <a href="#contact" class="btn btn-outline-primary mt-auto">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 rounded-3 p-4 fade-in-element">
+                        <div class="card-icon mb-3">
+                            <i class="fas fa-water"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Drain Cleaning</h3>
+                        <p class="mb-4">Professional drain cleaning services to clear blockages and ensure proper water flow in your plumbing system.</p>
+                        <a href="#contact" class="btn btn-outline-primary mt-auto">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 rounded-3 p-4 fade-in-element">
+                        <div class="card-icon mb-3">
+                            <i class="fas fa-tint-slash"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Leak Detection & Repair</h3>
+                        <p class="mb-4">Advanced technology to detect hidden leaks and professional repairs to prevent water damage to your property.</p>
+                        <a href="#contact" class="btn btn-outline-primary mt-auto">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 rounded-3 p-4 fade-in-element">
+                        <div class="card-icon mb-3">
+                            <i class="fas fa-temperature-high"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Water Heater Services</h3>
+                        <p class="mb-4">Installation, repair, and maintenance of water heaters to ensure you have hot water when you need it.</p>
+                        <a href="#contact" class="btn btn-outline-primary mt-auto">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="why-us py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-6 mx-auto">
+                    <h2 class="h1 fw-bold mb-4">Why Choose Us</h2>
+                    <p class="lead">We are committed to providing the highest quality plumbing services with customer satisfaction as our top priority.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 border-0 rounded-3 p-4 text-center fade-in-element">
+                        <div class="card-icon mb-3">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Licensed & Insured</h3>
+                        <p>Our plumbers are fully licensed and insured, providing you with peace of mind and protection.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 border-0 rounded-3 p-4 text-center fade-in-element">
+                        <div class="card-icon mb-3">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3 class="h4 mb-3">24/7 Availability</h3>
+                        <p>We are available round the clock for emergency plumbing services when you need us most.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 border-0 rounded-3 p-4 text-center fade-in-element">
+                        <div class="card-icon mb-3">
+                            <i class="fas fa-thumbs-up"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Quality Workmanship</h3>
+                        <p>We take pride in our high-quality workmanship and attention to detail on every job.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 border-0 rounded-3 p-4 text-center fade-in-element">
+                        <div class="card-icon mb-3">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Fair & Transparent Pricing</h3>
+                        <p>No hidden fees or surprises, just honest and transparent pricing for all our services.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Emergency Call Section -->
+    <section class="emergency-call text-center py-5 position-relative">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-5 fw-bold mb-4">Emergency Plumbing Problems?</h2>
+                    <p class="lead mb-4">Our expert plumbers are available 24/7 to handle any plumbing emergency. Don't wait until it's too late!</p>
+                    <a href="tel:1234567890" class="btn btn-primary btn-lg rounded-pill px-4 py-3">
+                        <i class="fas fa-phone-alt me-2"></i> Call (123) 456-7890
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="emergency-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-6 mx-auto">
+                    <h2 class="h1 fw-bold mb-4">Customer Testimonials</h2>
+                    <p class="lead">See what our satisfied customers have to say about our plumbing services.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 rounded-3 p-4 position-relative fade-in-element">
+                        <div class="quote-icon mb-3">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="mb-4">"The plumber arrived within an hour of my call and fixed our burst pipe quickly. Very professional and did an excellent job. Highly recommended!"</p>
+                        <div class="d-flex align-items-center mt-auto">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-user-circle fa-3x" style="color: var(--primary); background: linear-gradient(45deg, rgba(0, 198, 255, 0.1), rgba(0, 198, 255, 0.05)); width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%;"></i>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5 class="mb-0">John Smith</h5>
+                                <p class="client-location mb-0">Downtown</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 rounded-3 p-4 position-relative fade-in-element">
+                        <div class="quote-icon mb-3">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="mb-4">"I had a serious drain blockage and they came out same day. The plumber was friendly, knowledgeable, and got the job done right the first time. Fair pricing too!"</p>
+                        <div class="d-flex align-items-center mt-auto">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-user-circle fa-3x" style="color: var(--primary); background: linear-gradient(45deg, rgba(0, 198, 255, 0.1), rgba(0, 198, 255, 0.05)); width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%;"></i>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5 class="mb-0">Sarah Johnson</h5>
+                                <p class="client-location mb-0">Westside</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 rounded-3 p-4 position-relative fade-in-element">
+                        <div class="quote-icon mb-3">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="mb-4">"We've used Pro Plumbing for both emergency repairs and regular maintenance. They're always reliable, honest, and do quality work. Our go-to plumbers!"</p>
+                        <div class="d-flex align-items-center mt-auto">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-user-circle fa-3x" style="color: var(--primary); background: linear-gradient(45deg, rgba(0, 198, 255, 0.1), rgba(0, 198, 255, 0.05)); width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%;"></i>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5 class="mb-0">Michael Brown</h5>
+                                <p class="client-location mb-0">Northside</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-6 mx-auto">
+                    <h2 class="h1 fw-bold mb-4">Frequently Asked Questions</h2>
+                    <p class="lead">Find answers to common questions about our plumbing services.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="accordion rounded-3 overflow-hidden" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                    How quickly can you respond to an emergency?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    For plumbing emergencies, we typically arrive within 1-2 hours of your call, depending on your location and current demand. We prioritize emergency calls and have plumbers available 24/7 to handle urgent situations such as burst pipes, major leaks, or sewer backups.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                    Do you charge for estimates?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We provide free estimates for most standard plumbing jobs. For more complex projects, we may charge a diagnostic fee which is then applied to the cost of the job if you choose to proceed with our services. We always provide clear pricing information before beginning any work.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                    Do you offer any warranties on your work?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, we stand behind our work with a 100% satisfaction guarantee. We offer a 90-day warranty on labor and up to 1-year warranty on parts, depending on the manufacturer's warranty. If any issues arise with our plumbing work, we'll come back and fix it at no additional cost.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                                    What payment methods do you accept?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We accept various payment methods including cash, credit cards (Visa, MasterCard, American Express), debit cards, and electronic transfers. For larger projects, we also offer flexible payment plans to help make your plumbing services more affordable.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                                    How do I handle a plumbing emergency before you arrive?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    For water-related emergencies, locate and shut off the water supply to the affected area or at the main shut-off valve. For gas leaks, evacuate the premises immediately and call both us and your gas company from a safe location. For overflowing toilets, turn off the water supply valve behind the toilet. While waiting for our arrival, try to minimize water damage by using towels or buckets to collect water.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact & Service Area Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-6 mx-auto">
+                    <h2 class="h1 fw-bold mb-4">Contact Us & Service Areas</h2>
+                    <p class="lead">Get in touch with us or check if we serve your area.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-5">
+                    <div class="card h-100 border-0 rounded-3 p-4">
+                        <h3 class="h4 mb-4">Contact Information</h3>
+                        <div class="d-flex mb-4">
+                            <div class="flex-shrink-0 contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5>Our Location</h5>
+                                <p class="mb-0">123 Plumbing Street, Downtown, Multan, Punjab, PK</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="flex-shrink-0 contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5>Phone Number</h5>
+                                <p class="mb-0">(123) 456-7890</p>
+                                <p class="mb-0">Emergency: (123) 456-7899</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="flex-shrink-0 contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5>Email Address</h5>
+                                <p class="mb-0">info@proplumbing.com</p>
+                                <p class="mb-0">support@proplumbing.com</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="flex-shrink-0 contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5>Working Hours</h5>
+                                <p class="mb-0">Monday - Friday: 8:00 AM - 6:00 PM</p>
+                                <p class="mb-0">Emergency Service: 24/7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="card h-100 border-0 rounded-3 p-4">
+                        <h3 class="h4 mb-4">Send Us a Message</h3>
+                        <form id="contactForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" placeholder="Your Email" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="tel" class="form-control" placeholder="Your Phone">
+                                </div>
+                                <div class="col-md-6">
+                                    <select class="form-select">
+                                        <option selected>Select Service</option>
+                                        <option>Emergency Repair</option>
+                                        <option>Drain Cleaning</option>
+                                        <option>Leak Detection</option>
+                                        <option>Water Heater Service</option>
+                                        <option>Bathroom Plumbing</option>
+                                        <option>Kitchen Plumbing</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary py-3 px-4">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+<footer class="py-5 mt-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <h3 class="footer-brand mb-4">Pro<span>Plumbing</span></h3>
+                <p>Professional plumbing services for residential and commercial properties in Multan. With years of experience, we provide reliable and high-quality plumbing solutions to all our customers.</p>
+                <div class="mt-4 social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4">
+                <h5 class="footer-heading mb-4">Quick Links</h5>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#why-us">Why Choose Us</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-4">
+                <h5 class="footer-heading mb-4">Our Services</h5>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="#services">Emergency Repairs</a></li>
+                    <li><a href="#services">Drain Cleaning</a></li>
+                    <li><a href="#services">Leak Detection</a></li>
+                    <li><a href="#services">Water Heater Services</a></li>
+                    <li><a href="#services">Bathroom Plumbing</a></li>
+                    <li><a href="#services">Kitchen Plumbing</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-4">
+                <h5 class="footer-heading mb-4">Contact Us</h5>
+                <ul class="list-unstyled footer-contact">
+                    <li>
+                        <i class="fas fa-map-marker-alt me-3"></i>
+                        <span>123 Plumbing Street, Downtown, Multan, Punjab, PK</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone-alt me-3"></i>
+                        <span>(123) 456-7890</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope me-3"></i>
+                        <span>info@proplumbing.com</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-clock me-3"></i>
+                        <span>Available 24/7 for Emergencies</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mt-5 pt-3 border-top border-secondary">
+            <div class="col-md-6 text-center text-md-start">
+                <p class="mb-md-0">© <span id="currentYear">2024</span> ProPlumbing. All Rights Reserved.</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <p class="mb-0">Designed with <i class="fas fa-heart text-danger"></i> for Quality Plumbing</p>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top bg-primary text-white rounded-circle shadow" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="app.js"></script>
+    
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        // Back to Top Button
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+        
+        backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+        // Smooth Scrolling for Navigation Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const navbarCollapse = document.querySelector('.navbar-collapse');
+                    if (navbarCollapse.classList.contains('show')) {
+                        navbarCollapse.classList.remove('show');
+                    }
+                }
+            });
+        });
+        
+        // Form Submission
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Here you would typically send the form data to your server
+                // For demonstration, we'll just show an alert
+                alert('Thank you for your message! We will get back to you shortly.');
+                contactForm.reset();
+            });
+        }
+        
+        // Sticky Navigation Change on Scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('bg-white', 'shadow-sm');
+                navbar.classList.remove('navbar-dark');
+            } else {
+                navbar.classList.remove('shadow-sm');
+            }
+        });
+    </script>
+</body>
+</html>
