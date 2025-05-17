@@ -53,6 +53,24 @@ body {
     overflow-x: hidden;
     font-size: 16px;
     line-height: 1.6;
+    background-color: var(--dark);
+    background-image: 
+        linear-gradient(to right, rgba(255, 215, 0, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 215, 0, 0.03) 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-position: center;
+}
+
+.why-us, .faq-section {
+    background-image: 
+        linear-gradient(45deg, rgba(255, 215, 0, 0.03) 25%, transparent 25%), 
+        linear-gradient(-45deg, rgba(255, 215, 0, 0.03) 25%, transparent 25%);
+    background-size: 60px 60px;
+}
+
+.services, .contact-section {
+    background-image: radial-gradient(rgba(255, 215, 0, 0.05) 1px, transparent 1px);
+    background-size: 30px 30px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -163,7 +181,7 @@ p {
     border-color: var(--primary-dark);
     color: #000;
     transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0, 198, 255, 0.3);
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
 }
 
 .btn-outline-primary {
