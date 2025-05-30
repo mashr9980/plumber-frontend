@@ -14,13 +14,11 @@
     <meta property="og:url" content="https://theplumberlah.com/">
     <meta property="og:title" content="The Plumberlah Services | 24/7 Professional Plumbing in Kuala Lumpur">
     <meta property="og:description" content="Fast & reliable plumbing services for residential and commercial properties. Available 24/7 for emergencies in Kuala Lumpur and surrounding areas.">
-    <!-- <meta property="og:image" content="https://theplumberlah.com/images/og-image.jpg"> -->
     
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="The Plumberlah Services | Trusted Plumbing Solutions">
     <meta name="twitter:description" content="Professional plumbing services. Emergency repairs, installation, maintenance & more by licensed plumbers.">
-    <!-- <meta name="twitter:image" content="https://theplumberlah.com/images/twitter-image.jpg"> -->
     
     <!-- Canonical URL -->
     <meta rel="canonical" href="https://theplumberlah.com/">
@@ -83,8 +81,18 @@
                     <li class="nav-item">
                         <a class="nav-link" href="pages/about_us.html">About Us</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="#services">Plumbing Services</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="pages/electrician.html">Electrician Services</a></li>
+                            <li><a class="dropdown-item" href="pages/tiling.html">Tiling Services</a></li>
+                            <li><a class="dropdown-item" href="pages/renovation.html">Renovation Services</a></li>
+                            <li><a class="dropdown-item" href="pages/roofing.html">Roofing Services</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#why-us">Why Choose Us</a>
@@ -191,6 +199,60 @@
                         <h3 class="h4 mb-3">Water Heater Services</h3>
                         <p class="mb-4">Installation, repair, and maintenance of water heaters to ensure you have hot water when you need it.</p>
                         <a href="#contact" class="btn btn-outline-primary mt-auto">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Services Section -->
+    <section id="other-services" class="other-services py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-6 mx-auto">
+                    <h2 class="h1 fw-bold mb-4">Other Services</h2>
+                    <p class="lead">We also provide comprehensive home improvement and maintenance services to meet all your needs.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 border-0 rounded-3 p-4 text-center fade-in-element">
+                        <div class="card-icon mb-3">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Electrician Services</h3>
+                        <p class="mb-4">Professional electrical installations, repairs, and maintenance for residential and commercial properties.</p>
+                        <a href="pages/electrician.html" class="btn btn-outline-primary mt-auto">View Services</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 border-0 rounded-3 p-4 text-center fade-in-element">
+                        <div class="card-icon mb-3">
+                            <i class="fas fa-th-large"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Tiling Services</h3>
+                        <p class="mb-4">Expert tile installation, repair, and maintenance for kitchens, bathrooms, and all living spaces.</p>
+                        <a href="pages/tiling.html" class="btn btn-outline-primary mt-auto">View Services</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 border-0 rounded-3 p-4 text-center fade-in-element">
+                        <div class="card-icon mb-3">
+                            <i class="fas fa-hammer"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Renovation Services</h3>
+                        <p class="mb-4">Complete home renovation and remodeling services to transform your space with quality craftsmanship.</p>
+                        <a href="pages/renovation.html" class="btn btn-outline-primary mt-auto">View Services</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 border-0 rounded-3 p-4 text-center fade-in-element">
+                        <div class="card-icon mb-3">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Roofing Services</h3>
+                        <p class="mb-4">Professional roofing installation, repair, and maintenance to protect your home from the elements.</p>
+                        <a href="pages/roofing.html" class="btn btn-outline-primary mt-auto">View Services</a>
                     </div>
                 </div>
             </div>
@@ -483,6 +545,10 @@
                                         <option>Water Heater Service</option>
                                         <option>Bathroom Plumbing</option>
                                         <option>Kitchen Plumbing</option>
+                                        <option>Electrician Services</option>
+                                        <option>Tiling Services</option>
+                                        <option>Renovation Services</option>
+                                        <option>Roofing Services</option>
                                         <option>Other</option>
                                     </select>
                                 </div>
@@ -519,6 +585,7 @@
                 <ul class="list-unstyled footer-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#services">Services</a></li>
+                    <li><a href="pages/about_us.html">About Us</a></li>
                     <li><a href="#why-us">Why Choose Us</a></li>
                     <li><a href="#testimonials">Testimonials</a></li>
                     <li><a href="#faq">FAQ</a></li>
@@ -532,8 +599,10 @@
                     <li><a href="#services">Drain Cleaning</a></li>
                     <li><a href="#services">Leak Detection</a></li>
                     <li><a href="#services">Water Heater Services</a></li>
-                    <li><a href="#services">Bathroom Plumbing</a></li>
-                    <li><a href="#services">Kitchen Plumbing</a></li>
+                    <li><a href="pages/electrician.html">Electrician Services</a></li>
+                    <li><a href="pages/tiling.html">Tiling Services</a></li>
+                    <li><a href="pages/renovation.html">Renovation Services</a></li>
+                    <li><a href="pages/roofing.html">Roofing Services</a></li>
                 </ul>
             </div>
             <div class="col-lg-3 col-md-4">
@@ -580,17 +649,8 @@
     <!-- Font Awesome -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
     
-    <!-- Back to Top Button -->
-    <a href="#" class="back-to-top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-    
-    <!-- Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    
     <!-- Custom JavaScript -->
     <script>
-        // Back to Top Button
         const backToTopButton = document.getElementById('backToTop');
         
         window.addEventListener('scroll', () => {
@@ -606,7 +666,6 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
         
-        // Smooth Scrolling for Navigation Links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -621,7 +680,6 @@
                         behavior: 'smooth'
                     });
                     
-                    // Close mobile menu if open
                     const navbarCollapse = document.querySelector('.navbar-collapse');
                     if (navbarCollapse.classList.contains('show')) {
                         navbarCollapse.classList.remove('show');
@@ -630,7 +688,6 @@
             });
         });
         
-        // Form Submission
         const contactForm = document.getElementById('contactForm');
         if (contactForm) {
             contactForm.addEventListener('submit', function(e) {
@@ -641,7 +698,6 @@
             });
         }
         
-        // Sticky Navigation Change on Scroll
         window.addEventListener('scroll', function() {
             const navbar = document.querySelector('.navbar');
             if (window.scrollY > 100) {
