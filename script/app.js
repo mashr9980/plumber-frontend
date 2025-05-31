@@ -22,30 +22,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     window.addEventListener('scroll', () => {
-        if (window.pageYOffset > 300) {
-            if (backToTopButton) {
-                backToTopButton.style.display = 'flex';
-                setTimeout(() => {
-                    backToTopButton.style.opacity = '1';
-                }, 50);
-            }
-        } else {
-            if (backToTopButton) {
-                backToTopButton.style.opacity = '0';
-                setTimeout(() => {
-                    backToTopButton.style.display = 'none';
-                }, 300);
-            }
-        }
-
         if (navbar) {
-            if (window.scrollY > 100) {
+            if (window.scrollY > 10) {
                 navbar.classList.add('navbar-scrolled');
             } else {
                 navbar.classList.remove('navbar-scrolled');
             }
         }
-    });
+    });    
     
     if (backToTopButton) {
         backToTopButton.addEventListener('click', (e) => {
