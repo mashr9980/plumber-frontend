@@ -1074,3 +1074,26 @@ footer {
 .whatsapp-float i {
     margin: 0; /* Remove previous margin */
 }
+
+.call-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 130px; /* place above WhatsApp button */
+    right: 60px;
+    background-color: #ffc107; /* yellow */
+    color: #FFF;
+    border-radius: 50%;
+    font-size: 28px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 101;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.call-float i {
+    margin: 0;
+}
